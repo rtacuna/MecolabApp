@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A8F053F1D217AD7002A611C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F053E1D217AD7002A611C /* ChatViewController.swift */; };
+		1A8F05531D21EF60002A611C /* Messages+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F05511D21EF60002A611C /* Messages+CoreDataProperties.swift */; };
+		1A8F05541D21EF60002A611C /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F05521D21EF60002A611C /* Messages.swift */; };
+		1A8F05561D21EFEC002A611C /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8F05551D21EFEC002A611C /* MessagesManager.swift */; };
+		1ACB33511D28234F00F4FF9C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB33501D28234F00F4FF9C /* Network.swift */; };
+		1AEB1BEC1D10C7710055017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1BEB1D10C7710055017C /* AppDelegate.swift */; };
+		1AEB1BEE1D10C7710055017C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1BED1D10C7710055017C /* ViewController.swift */; };
+		1AEB1BF11D10C7710055017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEB1BEF1D10C7710055017C /* Main.storyboard */; };
+		1AEB1BF41D10C7710055017C /* Mecolab1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1BF21D10C7710055017C /* Mecolab1.xcdatamodeld */; };
+		1AEB1BF61D10C7710055017C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AEB1BF51D10C7710055017C /* Assets.xcassets */; };
+		1AEB1BF91D10C7710055017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEB1BF71D10C7710055017C /* LaunchScreen.storyboard */; };
+		1AEB1C041D10C7710055017C /* Mecolab1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1C031D10C7710055017C /* Mecolab1Tests.swift */; };
+		1AEB1C0F1D10C7710055017C /* Mecolab1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1C0E1D10C7710055017C /* Mecolab1UITests.swift */; };
+		1AEB1C1D1D10C94D0055017C /* NewUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1C1C1D10C94D0055017C /* NewUserViewController.swift */; };
+		1AEB1C1F1D10CB190055017C /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB1C1E1D10CB190055017C /* ContactsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AEB1C001D10C7710055017C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEB1BE01D10C7710055017C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AEB1BE71D10C7710055017C;
+			remoteInfo = Mecolab1;
+		};
+		1AEB1C0B1D10C7710055017C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AEB1BE01D10C7710055017C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AEB1BE71D10C7710055017C;
+			remoteInfo = Mecolab1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A8F053E1D217AD7002A611C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1A8F05511D21EF60002A611C /* Messages+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Messages+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A8F05521D21EF60002A611C /* Messages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		1A8F05551D21EFEC002A611C /* MessagesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+		1ACB33501D28234F00F4FF9C /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1AEB1BE81D10C7710055017C /* Mecolab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mecolab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEB1BEB1D10C7710055017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AEB1BED1D10C7710055017C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AEB1BF01D10C7710055017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AEB1BF31D10C7710055017C /* Mecolab1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mecolab1.xcdatamodel; sourceTree = "<group>"; };
+		1AEB1BF51D10C7710055017C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AEB1BF81D10C7710055017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AEB1BFA1D10C7710055017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEB1BFF1D10C7710055017C /* Mecolab1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mecolab1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEB1C031D10C7710055017C /* Mecolab1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mecolab1Tests.swift; sourceTree = "<group>"; };
+		1AEB1C051D10C7710055017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEB1C0A1D10C7710055017C /* Mecolab1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Mecolab1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AEB1C0E1D10C7710055017C /* Mecolab1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mecolab1UITests.swift; sourceTree = "<group>"; };
+		1AEB1C101D10C7710055017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AEB1C1C1D10C94D0055017C /* NewUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewUserViewController.swift; sourceTree = "<group>"; };
+		1AEB1C1E1D10CB190055017C /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AEB1BE51D10C7710055017C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1BFC1D10C7710055017C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1C071D10C7710055017C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AEB1BDF1D10C7710055017C = {
+			isa = PBXGroup;
+			children = (
+				1AEB1BEA1D10C7710055017C /* Mecolab1 */,
+				1AEB1C021D10C7710055017C /* Mecolab1Tests */,
+				1AEB1C0D1D10C7710055017C /* Mecolab1UITests */,
+				1AEB1BE91D10C7710055017C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AEB1BE91D10C7710055017C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB1BE81D10C7710055017C /* Mecolab1.app */,
+				1AEB1BFF1D10C7710055017C /* Mecolab1Tests.xctest */,
+				1AEB1C0A1D10C7710055017C /* Mecolab1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AEB1BEA1D10C7710055017C /* Mecolab1 */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB1BEB1D10C7710055017C /* AppDelegate.swift */,
+				1AEB1BED1D10C7710055017C /* ViewController.swift */,
+				1AEB1C1C1D10C94D0055017C /* NewUserViewController.swift */,
+				1AEB1C1E1D10CB190055017C /* ContactsViewController.swift */,
+				1A8F053E1D217AD7002A611C /* ChatViewController.swift */,
+				1ACB33501D28234F00F4FF9C /* Network.swift */,
+				1A8F05551D21EFEC002A611C /* MessagesManager.swift */,
+				1AEB1BEF1D10C7710055017C /* Main.storyboard */,
+				1AEB1BF51D10C7710055017C /* Assets.xcassets */,
+				1AEB1BF71D10C7710055017C /* LaunchScreen.storyboard */,
+				1AEB1BFA1D10C7710055017C /* Info.plist */,
+				1AEB1BF21D10C7710055017C /* Mecolab1.xcdatamodeld */,
+				1A8F05511D21EF60002A611C /* Messages+CoreDataProperties.swift */,
+				1A8F05521D21EF60002A611C /* Messages.swift */,
+			);
+			path = Mecolab1;
+			sourceTree = "<group>";
+		};
+		1AEB1C021D10C7710055017C /* Mecolab1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB1C031D10C7710055017C /* Mecolab1Tests.swift */,
+				1AEB1C051D10C7710055017C /* Info.plist */,
+			);
+			path = Mecolab1Tests;
+			sourceTree = "<group>";
+		};
+		1AEB1C0D1D10C7710055017C /* Mecolab1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB1C0E1D10C7710055017C /* Mecolab1UITests.swift */,
+				1AEB1C101D10C7710055017C /* Info.plist */,
+			);
+			path = Mecolab1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AEB1BE71D10C7710055017C /* Mecolab1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEB1C131D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1" */;
+			buildPhases = (
+				1AEB1BE41D10C7710055017C /* Sources */,
+				1AEB1BE51D10C7710055017C /* Frameworks */,
+				1AEB1BE61D10C7710055017C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mecolab1;
+			productName = Mecolab1;
+			productReference = 1AEB1BE81D10C7710055017C /* Mecolab1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AEB1BFE1D10C7710055017C /* Mecolab1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEB1C161D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1Tests" */;
+			buildPhases = (
+				1AEB1BFB1D10C7710055017C /* Sources */,
+				1AEB1BFC1D10C7710055017C /* Frameworks */,
+				1AEB1BFD1D10C7710055017C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AEB1C011D10C7710055017C /* PBXTargetDependency */,
+			);
+			name = Mecolab1Tests;
+			productName = Mecolab1Tests;
+			productReference = 1AEB1BFF1D10C7710055017C /* Mecolab1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AEB1C091D10C7710055017C /* Mecolab1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AEB1C191D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1UITests" */;
+			buildPhases = (
+				1AEB1C061D10C7710055017C /* Sources */,
+				1AEB1C071D10C7710055017C /* Frameworks */,
+				1AEB1C081D10C7710055017C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AEB1C0C1D10C7710055017C /* PBXTargetDependency */,
+			);
+			name = Mecolab1UITests;
+			productName = Mecolab1UITests;
+			productReference = 1AEB1C0A1D10C7710055017C /* Mecolab1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AEB1BE01D10C7710055017C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "rene Acuña Hernández";
+				TargetAttributes = {
+					1AEB1BE71D10C7710055017C = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = E3Y2R8Q9AN;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					1AEB1BFE1D10C7710055017C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1AEB1BE71D10C7710055017C;
+					};
+					1AEB1C091D10C7710055017C = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 1AEB1BE71D10C7710055017C;
+					};
+				};
+			};
+			buildConfigurationList = 1AEB1BE31D10C7710055017C /* Build configuration list for PBXProject "Mecolab1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AEB1BDF1D10C7710055017C;
+			productRefGroup = 1AEB1BE91D10C7710055017C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AEB1BE71D10C7710055017C /* Mecolab1 */,
+				1AEB1BFE1D10C7710055017C /* Mecolab1Tests */,
+				1AEB1C091D10C7710055017C /* Mecolab1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AEB1BE61D10C7710055017C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEB1BF91D10C7710055017C /* LaunchScreen.storyboard in Resources */,
+				1AEB1BF61D10C7710055017C /* Assets.xcassets in Resources */,
+				1AEB1BF11D10C7710055017C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1BFD1D10C7710055017C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1C081D10C7710055017C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEB1BE41D10C7710055017C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ACB33511D28234F00F4FF9C /* Network.swift in Sources */,
+				1AEB1BEE1D10C7710055017C /* ViewController.swift in Sources */,
+				1A8F05541D21EF60002A611C /* Messages.swift in Sources */,
+				1AEB1BEC1D10C7710055017C /* AppDelegate.swift in Sources */,
+				1A8F05531D21EF60002A611C /* Messages+CoreDataProperties.swift in Sources */,
+				1AEB1C1D1D10C94D0055017C /* NewUserViewController.swift in Sources */,
+				1A8F05561D21EFEC002A611C /* MessagesManager.swift in Sources */,
+				1AEB1BF41D10C7710055017C /* Mecolab1.xcdatamodeld in Sources */,
+				1A8F053F1D217AD7002A611C /* ChatViewController.swift in Sources */,
+				1AEB1C1F1D10CB190055017C /* ContactsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1BFB1D10C7710055017C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEB1C041D10C7710055017C /* Mecolab1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AEB1C061D10C7710055017C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AEB1C0F1D10C7710055017C /* Mecolab1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AEB1C011D10C7710055017C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AEB1BE71D10C7710055017C /* Mecolab1 */;
+			targetProxy = 1AEB1C001D10C7710055017C /* PBXContainerItemProxy */;
+		};
+		1AEB1C0C1D10C7710055017C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AEB1BE71D10C7710055017C /* Mecolab1 */;
+			targetProxy = 1AEB1C0B1D10C7710055017C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AEB1BEF1D10C7710055017C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEB1BF01D10C7710055017C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AEB1BF71D10C7710055017C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AEB1BF81D10C7710055017C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AEB1C111D10C7710055017C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AEB1C121D10C7710055017C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AEB1C141D10C7710055017C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Mecolab1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mecolab1/Mecolab1-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AEB1C151D10C7710055017C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Mecolab1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mecolab1/Mecolab1-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		1AEB1C171D10C7710055017C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Mecolab1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mecolab1.app/Mecolab1";
+			};
+			name = Debug;
+		};
+		1AEB1C181D10C7710055017C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Mecolab1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mecolab1.app/Mecolab1";
+			};
+			name = Release;
+		};
+		1AEB1C1A1D10C7710055017C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Mecolab1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mecolab1;
+			};
+			name = Debug;
+		};
+		1AEB1C1B1D10C7710055017C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Mecolab1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = reneACuna.Mecolab1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mecolab1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AEB1BE31D10C7710055017C /* Build configuration list for PBXProject "Mecolab1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEB1C111D10C7710055017C /* Debug */,
+				1AEB1C121D10C7710055017C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEB1C131D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEB1C141D10C7710055017C /* Debug */,
+				1AEB1C151D10C7710055017C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEB1C161D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEB1C171D10C7710055017C /* Debug */,
+				1AEB1C181D10C7710055017C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AEB1C191D10C7710055017C /* Build configuration list for PBXNativeTarget "Mecolab1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEB1C1A1D10C7710055017C /* Debug */,
+				1AEB1C1B1D10C7710055017C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AEB1BF21D10C7710055017C /* Mecolab1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AEB1BF31D10C7710055017C /* Mecolab1.xcdatamodel */,
+			);
+			currentVersion = 1AEB1BF31D10C7710055017C /* Mecolab1.xcdatamodel */;
+			path = Mecolab1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1AEB1BE01D10C7710055017C /* Project object */;
+}
