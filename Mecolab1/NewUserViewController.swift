@@ -25,14 +25,14 @@ class NewUserViewController: UIViewController {
     }
 
     @IBAction func newUser(sender: AnyObject) {
-        let nombre = self.textFieldName.text
+        let name = self.textFieldName.text
         let number = self.textFieldNumber.text
         let password = self.textFieldPassword.text
         
         // Check if the field have something
-        if nombre != "" && number != "" && password != ""{
+        if name != "" && number != "" && password != ""{
             self.clear()
-            makeSignUpRequest(nombre!, userNumber: number!, userPassword: password!)
+            makeSignUpRequest(name!, userNumber: number!, userPassword: password!)
         }
     }
     
@@ -52,8 +52,8 @@ class NewUserViewController: UIViewController {
     
     func makeSignUpRequest(userName:String, userNumber:String, userPassword:String){
 
-        let contactos = makeStringContacts()
-        let params = ["full_name": userName, "number":userNumber, "password":userPassword, "contactos":contactos]
+        let contacts = makeStringContacts()
+        let params = ["full_name": userName, "number":userNumber, "password":userPassword, "contactos":contacts]
         let (session, request) = makeRequest(params, function: "signup")
 
         let conextion = session.dataTaskWithRequest(request) { (data, response, error) -> Void in

@@ -31,7 +31,7 @@ func makeRequest(params: [String:String], function:String) -> (NSURLSession, NSM
 }
     
     func makeStringContacts() -> String {
-        var contactos = ""
+        var contacts = ""
         let store = CNContactStore()
         let keysToFetch = [CNContactPhoneNumbersKey]
         
@@ -54,13 +54,13 @@ func makeRequest(params: [String:String], function:String) -> (NSURLSession, NSM
                 print("Error fetching results for container")
             }
         }
-        for resultado in results{
-            for numero in resultado.phoneNumbers{
-                let num = (numero.value as! CNPhoneNumber).valueForKey("digits") as! String
-                contactos = contactos + "," + num
+        for result in results{
+            for number in result.phoneNumbers{
+                let num = (number.value as! CNPhoneNumber).valueForKey("digits") as! String
+                contacts = contacts + "," + num
                 
             }
         }
-        return contactos
+        return contacts
     }
     

@@ -19,7 +19,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         if defaults.objectForKey("number") == nil {
-            retornan()}
+            toBack()}
         else{
             self.makeContactsRequest()
         }
@@ -33,7 +33,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
 
     }
     
-    func retornan() {
+    func toBack() {
         if let loginController = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController") as? ViewController {
             // only if you have a navigationController
             self.navigationController?.presentViewController(loginController, animated: true, completion: nil)
@@ -95,7 +95,7 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
         if segue.identifier == "detail" {
             let detailView = segue.destinationViewController as? ChatViewController
             if let index = sender as? Int {
-                detailView?.tupla = self.contact[index]
+                detailView?.tuple = self.contact[index]
             }
         }
     }
@@ -103,11 +103,15 @@ class ContactsViewController: UIViewController, UITableViewDataSource, UITableVi
     @IBAction func toLogin(sender: AnyObject) {
             defaults.setObject(nil, forKey: "number")
             defaults.synchronize()
-            retornan()
+            self.contact = []
+            dispatch_async(dispatch_get_main_queue()) {
+                self.tableView.reloadData()
+            }
+            toBack()
     }
     
     @IBAction func refreshContacts(sender: AnyObject) {
-        contact = []
+        self.contact = []
         self.makeContactsRequest()
     }
 

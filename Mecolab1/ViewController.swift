@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         if number != ""{
             self.clear()
             self.makeSignInRequest(number!)}
+        view.endEditing(true)
         
     }
     
@@ -56,6 +57,7 @@ class ViewController: UIViewController {
             // pass the json to a dictionary
             if let jsonDictionary = jsonSwift as? Dictionary<String, String>{
                 if (statusCode == 200){
+                    
                     let defaults = NSUserDefaults.standardUserDefaults()
                     defaults.setObject(jsonDictionary["number"], forKey: "number")
                     defaults.synchronize()

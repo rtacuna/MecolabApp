@@ -17,8 +17,8 @@ class MessagesManager{
     var messages = [Messages]()
     
     
-    func addNewContact(tipo:Int, contenido:String, number:String){
-        _ = Messages.new(moc, type: tipo, content: contenido, number: number)
+    func addNewContact(typo:Int, content:String, number:String){
+        _ = Messages.new(moc, type: typo, content: content, number: number)
         saveDatabase()
     }
     

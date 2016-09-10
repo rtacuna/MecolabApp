@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let aps = notification["aps"] as! [String: AnyObject]
             let number = notification["number"] as! String
             createNewNewsItem(aps, number: number)
+
+            
         }
         
         return true
@@ -34,20 +36,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let news = notificationDictionary["alert"] as? String{
             let moc = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
             let item = Messages.new(moc, type: 2, content: news, number: number)
+            do{
+                try moc.save()
+            } catch{
+                
+            }
+            
+            NSNotificationCenter.defaultCenter().postNotificationName(ChatViewController.RefreshNewsFeedNotification, object: self)
             return item
-    
-            
-            //let newsItem = NewsItem(title: news, link: url)
-            //let newsStore = NewsStore.sharedStore
-            //newsStore.addItem(newsItem)
-            
-            //NSNotificationCenter.defaultCenter().postNotificationName(NewsFeedTableViewController.RefreshNewsFeedNotification, object: self)
-            //return newsItem
         }
         return nil
         
     }
-
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -155,7 +156,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for i in 0..<deviceToken.length {
             tokenString += String(format: "%02.2hhx", arguments: [tokenChars[i]])
         }
-        
         print("Device Token:", tokenString)
     }
     
@@ -167,6 +167,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let aps = userInfo["aps"] as! [String: AnyObject]
         let number = userInfo["number"] as! String
         createNewNewsItem(aps, number: number)
+
     }
     
 
